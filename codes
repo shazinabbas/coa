@@ -185,4 +185,17 @@ hlt
 
 
 
+Add two 16-bit numbers
+org 100h
+mov ax,1h
+mov bx,5h
+add bx,ax
+mov cx,ax
+mov dx,cx
+add dx,48
+mov ah,2h
+int 21h
+hlt
+
+
 
