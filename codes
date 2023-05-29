@@ -163,3 +163,26 @@ lea dx,str1
 int 21h
 
 
+
+
+
+print length of university
+org 100h
+.data
+str1 db "university$"
+len dw ?
+.code
+mov ax,@data
+mov si,0
+loop1:
+inc si
+cmp a[si],"$"
+je exit
+jne loop1
+exit:
+mov len,si
+hlt
+
+
+
+
