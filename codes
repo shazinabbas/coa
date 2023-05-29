@@ -153,6 +153,13 @@ mov ah,2
 int 21h
 
 
-
+print hello
+.org 100h
+.data
+str1 db "hello$"
+.code
+mov ah,o9h
+lea dx,str1
+int 21h
 
 
