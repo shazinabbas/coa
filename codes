@@ -135,3 +135,24 @@ jne l2
 exit:
 mov fact,ax
 Ret
+
+
+
+
+
+
+
+Read and print a char
+org 100h
+.code
+mov ah,1
+int 21h
+mov bl,al
+add dl,bl
+mov ah,2
+int 21h
+
+
+
+
+
